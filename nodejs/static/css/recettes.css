@@ -1,0 +1,87 @@
+.dd-handle:hover{
+    font-weight: normal;
+}
+.rct-title{
+    float: left;
+    width: 15%;
+    padding: 0 5px;
+}
+.rct-description{
+    float: left;
+    width: 65%;
+    padding: 0 5px;
+}
+.rct-qty{
+    float: left;
+    width: 7%;
+    padding: 0 5px;
+}
+.rct-unit{
+    float: left;
+    width: 13%;
+    padding: 0 5px;
+}
+
+#nestable2 .dd-placeholder .dd3-handle{
+    background: red;
+}
+.dd-item > .remove{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -40px;
+    top:9px;
+    background-color: #ed5565;
+    border-color: #ed5565;
+    color:#fff;
+}
+.dd-item > .remove .fa{
+    font-weight: normal;
+    font-size:16px;
+    line-height: 25px;
+}
+.ibox-content{
+    padding:10px 50px 10px 30px;
+}
+button.enregistrer{
+    margin-top:-6px;
+}
+
+/**
+ * Nestable Draggable Handles
+ */
+.dd3-content { display: block; margin: 5px 0; padding: 5px 10px 5px 40px; color: #333; text-decoration: none; font-weight: normal; border: 1px solid #e7eaec;
+    background: #f5f5f5;
+    
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.dd3-content:hover { color: #2ea8e5; background: #fff; }
+.dd-dragel > .dd3-item > .dd3-content { margin: 0; }
+.dd3-item > button { 
+    margin: 5px 0 0 -30px; 
+}
+.dd-handle.dd3-handle { 
+    position: absolute; 
+    margin: 0; 
+    left: 0; 
+    top: 0; 
+    bottom: auto; 
+    cursor: pointer; 
+    width: 30px; 
+    height: 46px; 
+    text-align: center;
+    white-space: nowrap; 
+    overflow: hidden;
+    border:none;
+    background: #e7eaec!important;   
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding:10px 0;
+}
+#nestable2 .dd-handle{
+    padding:10px 0;
+}
+
+.dd3-handle:hover { background: red }
