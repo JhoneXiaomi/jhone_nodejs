@@ -1,0 +1,7 @@
+{
+  "name": "nodejs_study",
+  "version": "0.0.1",
+  "dependencies": {
+    "koa": "^2.3.0"
+  }
+}
