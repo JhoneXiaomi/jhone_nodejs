@@ -1,9 +1,8 @@
-
 /*
  *
- * resource :(Sequelize学习资料) https://segmentfault.com/a/1190000003987871
- *                              https://segmentfault.com/a/1190000003987871#articleHeader29
- *
+ * resource :(Sequelize学习资料API) https://itbilu.com/nodejs/npm/VkYIaRPz-.html#api-instance-define
+ * (Sequelize 学习资料demo) https://segmentfault.com/a/1190000003987871#articleHeader29DEMO
+ *  mysql2 学习资料document:https://www.npmjs.com/package/mysql2
  * */
 const Koa = require('koa');
 
@@ -20,33 +19,11 @@ const isProduction = process.env.NODE_ENV === 'production';
 // 引入config 模块
 const Config = require('./config');
 
-const Sequelize = require('Sequelize');
-
-var sequelize = new Sequelize(Config.database ,Config.username ,Config.password,{
-    host:Config.host,
-    dialect:'mysql',
-    pool:{
-        max:5,
-        min:0,
-        idle:30000
-    }
-});
-
-
-var user = sequelize.define('user',{
-    id: {
-        type: Sequelize.STRING(32),
-        primaryKey: true
-    },
-    name: Sequelize.STRING(20),
-    password: Sequelize.STRING(32)
-},{
-    timestamps:false
-});
+const User = require('./model/user');
 
 var now = Date.now();
 
-user.create({
+User.create({
     id: 'g-' + now,
     name: 'Gaffey',
     password: '123456'
@@ -55,7 +32,6 @@ user.create({
 }).catch(function (err) {
     console.log('failed: ' + err);
 });
-
 
 (async() =>{
     var uses = await user.findAll({
