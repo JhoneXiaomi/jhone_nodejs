@@ -1,31 +1,30 @@
 {
-  "name": "nodejs",
-  "version": "0.0.1",
-  "description": "This is nodejs demo",
-  "main": "app.js",
-  "scripts": {
-    "start": "node --use_strict app.js"
-  },
-  "keywords": [
-    "koa",
-    "async",
-    "nunjucks"
-  ],
-  "dependencies": {
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-router": "^7.2.1",
-    "nunjucks": "^3.0.1",
-    "mime": "^2.0.0",
-    "mz": "^2.6.0"
-  },
-  "author": {
-    "name": "jhone",
-    "email": "jhonexiaomei@gmail.com"
-  },
-  "license": "Apache-2.0",
-  "repository": {
-    "type": "github",
-    "url": "https://github.com/JhoneXiaomi/jhone_nodejs.git"
-  }
+    "name": "nodejs",
+    "version": "1.0.0",
+    "description": "the test example",
+    "main": "app.js",
+    "scripts": {
+        "start": "node --use_strict app.js"
+    },
+    "keywords": [
+        "koa",
+        "async",
+        "nunjucks"
+    ],
+    "author": "JHONE",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "github",
+        "url": "https://github.com/JhoneXiaomi/jhone_nodejs.git"
+    },
+    "dependencies": {
+        "koa": "^2.3.0",
+        "koa-bodyparser": "^4.2.0",
+        "koa-router": "^7.2.1",
+        "mime": "^2.0.3",
+        "mysql2": "1.4.2",
+        "mz": "^2.7.0",
+        "nunjucks": "^3.0.1",
+        "sequelize": "^4.11.3"
+    }
 }
